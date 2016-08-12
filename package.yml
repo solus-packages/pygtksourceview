@@ -1,0 +1,20 @@
+name       : python-gtk2-sourceview
+version    : 2.10.1
+release    : 1
+source     :
+    - https://download.gnome.org/sources/pygtksourceview/2.10/pygtksourceview-2.10.1.tar.gz : 2ae9356b0b189e7ebf61e366152aac0a471b17b4ddead5bf747bf4c912a0d698
+license    : GPL-2.0
+component  : programming.python
+summary    : GTK+2 SourceView bindings for Python
+description: |
+    GTK+2 SourceView bindings for Python
+builddeps  :
+    - pkgconfig(pygobject-2.0)
+    - pkgconfig(pygtk-2.0)
+    - libgtksourceview2-devel
+setup      : |
+    %configure --disable-docs
+build      : |
+    %make
+install    : |
+    %make_install
