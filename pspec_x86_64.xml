@@ -1,9 +1,9 @@
 <PISI>
     <Source>
-        <Name>python-gtk2-sourceview</Name>
+        <Name>pygtksourceview</Name>
         <Packager>
-            <Name>Jon West</Name>
-            <Email>radicalraccoon@cryptolab.net</Email>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@stroblindustries.com</Email>
         </Packager>
         <License>GPL-2.0</License>
         <PartOf>programming.python</PartOf>
@@ -13,7 +13,7 @@
         <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
     </Source>
     <Package>
-        <Name>python-gtk2-sourceview</Name>
+        <Name>pygtksourceview</Name>
         <Summary xml:lang="en">GTK+2 SourceView bindings for Python</Summary>
         <Description xml:lang="en">GTK+2 SourceView bindings for Python
 </Description>
@@ -24,25 +24,25 @@
         </Files>
     </Package>
     <Package>
-        <Name>python-gtk2-sourceview-devel</Name>
-        <Summary xml:lang="en">Development files for python-gtk2-sourceview</Summary>
+        <Name>pygtksourceview-devel</Name>
+        <Summary xml:lang="en">Development files for pygtksourceview</Summary>
         <Description xml:lang="en">GTK+2 SourceView bindings for Python
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="1">python-gtk2-sourceview</Dependency>
+            <Dependency release="2">pygtksourceview</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/lib64/pkgconfig/*.pc</Path>
         </Files>
     </Package>
     <History>
-        <Update release="1">
-            <Date>2016-08-12</Date>
+        <Update release="2">
+            <Date>2016-08-23</Date>
             <Version>2.10.1</Version>
             <Comment>Packaging update</Comment>
-            <Name>Jon West</Name>
-            <Email>radicalraccoon@cryptolab.net</Email>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@stroblindustries.com</Email>
         </Update>
     </History>
 </PISI>
